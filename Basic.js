@@ -26,3 +26,12 @@ let isLoggedIn = true
 // (number = 2 to power 53), bigint, (string = ""), (null = standalone value), underfiend, (symbol = unique), object
 console.log(typeof null) // object
 console.log(typeof(name)); // string
+
+
+
+//Convertion operation
+let score = "33"
+console.log(typeof score) //string
+score = "33abc"
+let valueInNumber = Number(score)
+console.log (typeof valueInNumber) // Nan = Not a Number 

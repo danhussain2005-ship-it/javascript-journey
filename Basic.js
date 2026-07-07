@@ -28,7 +28,6 @@ console.log(typeof null) // object
 console.log(typeof(name)); // string
 
 
-
 //Convertion operation
 let score = "33"
 console.log(typeof score) //string
@@ -41,3 +40,7 @@ console.log (typeof valueInNumber) // Nan = Not a Number
 isLoggedIn = 0
 let BooleanisLoggedIn = Boolean(isLoggedIn)
 console.log(BooleanisLoggedIn)
+
+
+//Operations
+console.log(true);

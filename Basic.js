@@ -8,7 +8,7 @@ let accountEmail = "Dan@gmail.com";
 accountCity = "Siliguri"
 let accountState 
 accountEmail = "Hussain@gmail.com"
-accountId = "654321" // can't change a variable which we declare as const 
+//accountId = 654321 can't change a variable which we declare as const 
 accountCity = "Kolkata"
 accountPassword = "dan13245"
 /*
@@ -35,3 +35,9 @@ console.log(typeof score) //string
 score = "33abc"
 let valueInNumber = Number(score)
 console.log (typeof valueInNumber) // Nan = Not a Number 
+// "33" = 33
+// "33abc" = NaN
+// true = 1, false = 0
+isLoggedIn = 0
+let BooleanisLoggedIn = Boolean(isLoggedIn)
+console.log(BooleanisLoggedIn)

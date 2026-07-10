@@ -15,7 +15,7 @@ accountPassword = "dan13245"
 Don't prefer using var, 
 because of issue in block scope and fuctional scope 
 */
-//console.table([accountId, accountEmail, accountPassword, accountCity, accountState]) //undefined = empty varaiable  
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState]) //undefined = empty varaiable  
 
 
 //Datatypes
@@ -26,6 +26,8 @@ let isLoggedIn = true
 // (number = 2 to power 53), bigint, (string = ""), (null = standalone value), underfiend, (symbol = unique), object
 console.log(typeof null) // object
 console.log(typeof(name)); // string
+const id = Symbol('123')
+console.log(id)
 
 
 //Convertion operation
@@ -41,6 +43,3 @@ isLoggedIn = 0
 let BooleanisLoggedIn = Boolean(isLoggedIn)
 console.log(BooleanisLoggedIn)
 
-
-//Operations
-console.log(true);

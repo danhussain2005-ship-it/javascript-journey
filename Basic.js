@@ -80,3 +80,14 @@ console.log(othernum.toPrecision(5),othernum.toPrecision(2),othernum.toPrecision
 const hundreds = 10000000
 console.log(hundreds.toLocaleString())
 console.log(hundreds.toLocaleString('en-IN'))
+
+
+//Maths
+console.log(Math)
+console.log(Object.getOwnPropertyNames(Math))
+console.log(Math.PI)
+console.log(Math.abs(-568))
+console.log(Math.round(5.9))
+console.log(Math.ceil(4.4))
+console.log(Math.floor(4.9))
+console.log()

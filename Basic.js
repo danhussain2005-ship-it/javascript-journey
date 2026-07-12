@@ -43,3 +43,25 @@ isLoggedIn = 0
 let BooleanisLoggedIn = Boolean(isLoggedIn)
 console.log(BooleanisLoggedIn)
 
+
+//Strings
+const namee = "dan"
+const repoCount = 50
+console.log(`My name is ${namee} and my repo count is ${repoCount}`)
+const gameName = String("CallOfDuty")
+console.log(namee[0])
+console.log(gameName.length)
+console.log(gameName.toUpperCase())
+const newString = gameName.substring(0,4)
+console.log(newString)
+const anotherString = gameName.slice(5,8)
+console.log(anotherString)
+console.log(gameName.at(-1))
+const newStringone = "    DAN    "
+console.log(newStringone.trim())
+const url = "https://dan.com/dan%20hussain"
+console.log(url)
+console.log(url.replace("%20","_"))
+console.log(url.includes("dan"))
+const a = "dan-hussain-2005"
+console.log(a.split("-"))

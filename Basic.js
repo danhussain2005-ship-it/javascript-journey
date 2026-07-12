@@ -65,3 +65,18 @@ console.log(url.replace("%20","_"))
 console.log(url.includes("dan"))
 const a = "dan-hussain-2005"
 console.log(a.split("-"))
+
+
+//Numbers 
+const point = 400
+console.log(400)
+const balance = new Number(100)
+console.log(balance)
+console.log(balance.valueOf())
+console.log(balance.toString().length)
+console.log(balance.toFixed(2))
+const othernum = 123.4944
+console.log(othernum.toPrecision(5),othernum.toPrecision(2),othernum.toPrecision(3))
+const hundreds = 10000000
+console.log(hundreds.toLocaleString())
+console.log(hundreds.toLocaleString('en-IN'))

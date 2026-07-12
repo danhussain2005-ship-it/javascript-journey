@@ -92,3 +92,20 @@ console.log(Math.ceil(4.4))
 console.log(Math.floor(4.9))
 console.log(Math.max(4,2,1,5,4,6,8,9))
 console.log(Math.min(8,5,1,2,3,6,9))
+
+
+//Date
+let newDate = new Date()
+console.log(newDate)
+console.log(newDate.toString())
+console.log(newDate.toLocaleDateString())
+console.log(newDate.toDateString)
+console.log(newDate.getMonth()+1) // stars with zero
+console.log(newDate.getDate())
+console.log(newDate.getDay())
+let mydate = new Date(2026,6,5)
+console.log(mydate.toDateString())
+let myTimeStamp = Date.now()
+newDate.toLocaleString('default', {
+    weekday: "long"
+})

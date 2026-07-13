@@ -99,7 +99,7 @@ let newDate = new Date()
 console.log(newDate)
 console.log(newDate.toString())
 console.log(newDate.toLocaleDateString())
-console.log(newDate.toDateString)
+console.log(newDate.toDateString())
 console.log(newDate.getMonth()+1) // stars with zero
 console.log(newDate.getDate())
 console.log(newDate.getDay())
@@ -109,3 +109,21 @@ let myTimeStamp = Date.now()
 newDate.toLocaleString('default', {
     weekday: "long"
 })
+
+
+//Array
+const myArr = [0,2,5,3,4]
+console.log(myArr[2])
+const myArr2 = new Array(1,2,3,4)
+//Array Methods
+myArr.push(8)
+console.log(myArr)
+let k = myArr.pop()
+console.log(myArr)
+console.log(k)
+myArr.unshift(10)
+myArr.shift()
+console.log(myArr)
+const Myarr=[1,2,3,4,5,6,7]
+console.log(Myarr.slice(1,3)) 
+console.log(Myarr.splice(1,3))

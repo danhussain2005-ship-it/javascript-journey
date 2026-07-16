@@ -127,3 +127,12 @@ console.log(myArr)
 const Myarr=[1,2,3,4,5,6,7]
 console.log(Myarr.slice(1,3)) 
 console.log(Myarr.splice(1,3))
+
+//Array_02
+const marvel_heroes = ["thor","ironman","spiderman"]
+marvel_heroes.push("Deadpool")
+const dc_heroes = ["batman","superman","flash"]
+console.log(marvel_heroes)
+marvel_heroes.push(dc_heroes)
+console.log(marvel_heroes[4][1])
+

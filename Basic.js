@@ -132,7 +132,9 @@ console.log(Myarr.splice(1,3))
 const marvel_heroes = ["thor","ironman","spiderman"]
 marvel_heroes.push("Deadpool")
 const dc_heroes = ["batman","superman","flash"]
-console.log(marvel_heroes)
-marvel_heroes.push(dc_heroes)
-console.log(marvel_heroes[4][1])
-
+//console.log(marvel_heroes)
+//marvel_heroes.push(dc_heroes)
+//console.log(marvel_heroes[4][1])
+const allheroes = marvel_heroes.concat(dc_heroes)
+console.log(allheroes)
+const new_heroes = (...marvel_heroes, ...dc_heroes)

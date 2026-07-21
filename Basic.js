@@ -137,4 +137,11 @@ const dc_heroes = ["batman","superman","flash"]
 //console.log(marvel_heroes[4][1])
 const allheroes = marvel_heroes.concat(dc_heroes)
 console.log(allheroes)
-const new_heroes = (...marvel_heroes, ...dc_heroes)
+const new_heroes = [...marvel_heroes, ...dc_heroes]
+console.log(new_heroes)
+const num_array = [1,2,3,[4,5,6,[8,9]],5]
+const real_num_array = num_array.flat(Infinity)
+console.log(real_num_array)
+console.log(Array.from("DAN"))
+let score1=100,score2=300,score3=200
+console.log(Array.of(score1,score2,score3))

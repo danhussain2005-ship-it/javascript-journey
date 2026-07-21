@@ -145,3 +145,13 @@ console.log(real_num_array)
 console.log(Array.from("DAN"))
 let score1=100,score2=300,score3=200
 console.log(Array.of(score1,score2,score3))
+
+
+//Objects
+const JsUSER={
+    name: "DANISH",
+    age:20,
+    location:"SILIGURI",
+    gmail:"dan@gmail.com",
+    isLoggedIn_=false
+}

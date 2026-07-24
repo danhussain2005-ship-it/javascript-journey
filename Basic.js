@@ -148,10 +148,20 @@ console.log(Array.of(score1,score2,score3))
 
 
 //Objects
+const mySym = Symbol('Key1')
 const JsUSER={
     name: "DANISH",
     age:20,
     location:"SILIGURI",
     gmail:"dan@gmail.com",
-    isLoggedIn_=false
+    isLoggedin:false,
+    [mySym]:'myKey1'
 }
+JsUSER.gmail="dan@google.com"
+Object.freeze(JsUSER)
+JsUSER.gmail="dan@chatgpt.com"
+console.log(JsUSER.gmail)
+JsUSER.greeting = function(){
+    console.log("Hello JS user")
+}
+console.log(JsUSER.greeting())

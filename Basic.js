@@ -150,7 +150,7 @@ console.log(Array.of(score1,score2,score3))
 //Objects
 const mySym = Symbol('Key1')
 const JsUSER={
-    name: "DANISH",
+    name: "DAN",
     age:20,
     location:"SILIGURI",
     gmail:"dan@gmail.com",
@@ -158,10 +158,14 @@ const JsUSER={
     [mySym]:'myKey1'
 }
 JsUSER.gmail="dan@google.com"
-Object.freeze(JsUSER)
+//Object.freeze(JsUSER)
 JsUSER.gmail="dan@chatgpt.com"
 console.log(JsUSER.gmail)
 JsUSER.greeting = function(){
     console.log("Hello JS user")
 }
 console.log(JsUSER.greeting())
+JsUSER.greetingTwo= function(){
+    console.log(`Hey ${this.name}`)
+}
+console.log(JsUSER.greetingTwo())

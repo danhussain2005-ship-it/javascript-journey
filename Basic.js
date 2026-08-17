@@ -176,4 +176,25 @@ const GithubUser = {}
 GithubUser.id = "dan132"
 GithubUser.name = "Dan"
 GithubUser.isLoggedIn = true
- console.log (GithubUser)     
+ console.log (GithubUser)
+
+const regularUser ={
+    email : "regular@gmail.com",
+    fullname: {
+        userfullname: {
+            firstname:"Dan",
+            lastname: "hussain"
+    }
+}
+}
+console.log(regularUser.fullname.userfullname.lastname)
+
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+//const obj3 = Object.assign({},obj1,obj2)
+//console.log(obj3)
+const obj3 = {...obj1,...obj2}
+console.log(obj3)
+console.log(Object.keys(GithubUser))
+console.log(Object.values(GithubUser))
+console.log(Object.entries(GithubUser))

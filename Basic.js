@@ -169,3 +169,11 @@ JsUSER.greetingTwo= function(){
     console.log(`Hey ${this.name}`)
 }
 console.log(JsUSER.greetingTwo())
+console.log(JsUSER)
+
+const GithubUser = {}
+
+GithubUser.id = "dan132"
+GithubUser.name = "Dan"
+GithubUser.isLoggedIn = true
+ console.log (GithubUser)     

@@ -197,4 +197,14 @@ const obj3 = {...obj1,...obj2}
 console.log(obj3)
 console.log(Object.keys(GithubUser))
 console.log(Object.values(GithubUser))
-console.log(Object.entries(GithubUser))
+console.log(Object.entries(GithubUser))     
+
+const course ={
+    coursname:"JavaScript-Journey",
+    courseprice:"1000",
+    courseInstructor:"Dan"        
+}
+
+const {courseInstructor: instructor} = course
+//console.log(courseInstructor)
+console.log(instructor)

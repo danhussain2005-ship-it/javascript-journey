@@ -208,3 +208,12 @@ const course ={
 const {courseInstructor: instructor} = course
 //console.log(courseInstructor)
 console.log(instructor)
+
+
+//Functions
+function saymyname(){
+console.log("D")
+console.log("A")
+console.log("N")
+}
+saymyname()

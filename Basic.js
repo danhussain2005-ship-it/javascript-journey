@@ -218,6 +218,14 @@ console.log("N")
 }
 saymyname()
 function add(num1,num2){
-console.log(num1+num2)
+let result = num1+num2
+return result
 }
-add(5,"8")
+
+const result = add(5,3)
+console.log("Result:",result)
+
+function loginUserMessage(username){
+    return `${username} just looged in`
+}
+console.log(loginUserMessage("DAN"))

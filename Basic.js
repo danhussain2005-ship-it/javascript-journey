@@ -244,3 +244,10 @@ function handleObject(anyobject){
 }
 
 handleObject(user)
+
+const myNewArray=[200,400,500] 
+
+function retuenSecondValue(myNewArray){
+    return myNewArray[1]
+}
+console.log(retuenSecondValue(myNewArray))

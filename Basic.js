@@ -229,3 +229,18 @@ function loginUserMessage(username){
     return `${username} just looged in`
 }
 console.log(loginUserMessage("DAN"))
+function calc(val1,...num1){
+    return num1
+}
+console.log(calc(500,200,400))
+
+const user={
+    username: "Dan",
+    price:299    
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+handleObject(user)

@@ -1,5 +1,5 @@
 console.log("Hello!");
-console.log("This is a basic JavaScript file.");
+console.log("This is a my JavaScript-Journey file.");
 
 // Variables
 const accountId = 123456
@@ -247,7 +247,15 @@ handleObject(user)
 
 const myNewArray=[200,400,500] 
 
-function retuenSecondValue(myNewArray){
+function returnSecondValue(myNewArray){
     return myNewArray[1]
 }
-console.log(retuenSecondValue(myNewArray))
+console.log(returnSecondValue(myNewArray))
+
+
+//Scope 
+let abc = 300
+if (true){
+    let abc = 100
+}
+console.log(abc)

@@ -259,3 +259,13 @@ if (true){
     let abc = 100
 }
 console.log(abc)
+
+function one(){
+    const username = "dan"
+
+    function two(){
+        const website ="github"
+        console.log(username)
+    }
+    console.log(website)
+}

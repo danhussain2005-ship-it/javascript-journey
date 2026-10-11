@@ -4,8 +4,8 @@ console.log("This is a my JavaScript-Journey file.");
 // Variables
 const accountId = 123456
 var accountPassword = "DAN12345"
-let accountEmail = "Dan@gmail.com";
-accountCity = "Siliguri"
+let accountEmail = "Dan@gmail.com"
+let accountCity = "Siliguri"
 let accountState 
 accountEmail = "Hussain@gmail.com"
 //accountId = 654321 can't change a variable which we declare as const 
@@ -267,5 +267,19 @@ function one(){
         const website ="github"
         console.log(username)
     }
-    console.log(website)
+    // console.log(website)
+
+    two()
 }
+one()
+
+const userr ={
+    username: "dan",
+    price: 500,
+    welcome: function(){
+        console.log(`${this.username}, welcome to website`)
+    }
+}
+userr.welcome()
+userr.username = "sam"
+userr.welcome()

@@ -277,9 +277,21 @@ const userr ={
     username: "dan",
     price: 500,
     welcome: function(){
-        console.log(`${this.username}, welcome to website`)
+        console.log(this)
     }
 }
 userr.welcome()
 userr.username = "sam"
 userr.welcome()
+
+
+console.log(this)
+ const eye = () => {
+    let username = "dan"
+    console.log(this.username)
+ }
+ eye()
+
+//Arrow
+const addTwo = (num1,num2) => num1 + num2
+console.log(addTwo(6,7))

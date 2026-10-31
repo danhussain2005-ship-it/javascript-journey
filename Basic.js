@@ -280,9 +280,9 @@ const userr ={
         console.log(this)
     }
 }
-userr.welcome()
-userr.username = "sam"
-userr.welcome()
+userr.welcome();
+userr.username = "sam";
+userr.welcome();
 
 
 console.log(this)
@@ -294,4 +294,16 @@ console.log(this)
 
 //Arrow
 const addTwo = (num1,num2) => num1 + num2
-console.log(addTwo(6,7))
+console.log(addTwo(6,7));
+
+
+//IIFE
+(function ace(){//named IIFE
+    console.log(`DB connected`);
+})();
+
+
+((name) => {//simple IIFE
+    console.log(`DB connected two ${name}`)
+})("dan");
+

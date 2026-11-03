@@ -307,3 +307,30 @@ console.log(addTwo(6,7));
     console.log(`DB connected two ${name}`)
 })("dan");
 
+ 
+//Control Statements 
+if (true){
+    console.log("DAN")
+}
+
+const score4= 500
+if (score4<100){
+    console.log("SCore is more than 100");
+    }   
+else if (score4>400){
+    console.log("Score is  more than 400")
+}
+
+//Switch
+const month= 3
+switch(month){
+    case 1:
+        console.log("January")
+        break
+     case 2:
+        console.log("Feb")
+        break
+    case 3:
+        console.log("March")
+}
+

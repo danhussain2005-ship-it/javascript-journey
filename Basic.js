@@ -330,7 +330,26 @@ switch(month){
      case 2:
         console.log("Feb")
         break
-    case 3:
+    case 3: 
         console.log("March")
 }
 
+//Truthy Values: "0",true,"false",[],{},fuction
+//Falsy values: false,0,-0,0n,"",null,undefined
+
+usergmail=[]
+if (usergmail.length===0)
+{
+    console.log("Array is empty")
+}
+
+const emptyObj={
+    username:"Dan",
+
+}
+if(Object.keys(emptyObj).length===0){
+    {}    console.log("Object is empty")
+}
+else{
+    console.log("Obejct is not empty")
+}

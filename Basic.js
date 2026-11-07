@@ -363,3 +363,41 @@ console.log(val1)
 //Terniary Operator -> condition ? true :false
 const iceTeaprice = 150
 iceTeaprice >= 100 ? console.log("More than 100") : console.log("Less than 100")
+
+//Iterations
+for (let i = 10; i > 0; i--) {
+    const element = i;
+    console.log(i)    
+}
+
+for (let i=1;i<=10;i++){
+    console.log(`${i}'s table`)
+    for(let j=1;j<=10;j++){
+        console.log(i + "x" + j + "=" + i*j)
+    }
+
+}
+
+let myArray = ['flash','batman','superman']
+console.log(myArray.length)
+for (let i =0;i<myArray.length;i++){
+    console.log(myArray[i]) 
+}
+
+//break and continue
+
+for (let index = 1; index < 21; index++) {
+    if (index==5){
+        console.log("5 Detected")
+        break;
+    }
+    console.log(`Value of i is ${index}`)    
+}
+
+for (let index = 1; index < 21; index++) {
+    if (index==5){
+        console.log("5 Detected")
+        continue;
+    }
+    console.log(`Value of i is ${index}`)    
+}

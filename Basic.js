@@ -365,6 +365,8 @@ const iceTeaprice = 150
 iceTeaprice >= 100 ? console.log("More than 100") : console.log("Less than 100")
 
 //Iterations
+
+//1.For loop
 for (let i = 10; i > 0; i--) {
     const element = i;
     console.log(i)    
@@ -401,3 +403,17 @@ for (let index = 1; index < 21; index++) {
     }
     console.log(`Value of i is ${index}`)    
 }
+
+//2.While loop
+let index=0
+while(index<=10){
+    console.log(`Value of index is ${index}`);
+    index=index+2
+}
+
+//3.Do-While loop
+let points = 0
+do{
+    console.log(`Score is ${points}`)
+    points++
+}while(points<=10)

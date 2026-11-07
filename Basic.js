@@ -417,3 +417,78 @@ do{
     console.log(`Score is ${points}`)
     points++
 }while(points<=10)
+
+
+//High Order Array Loops
+
+//i.For-of loop
+const arr=[1,2,3,4,5]
+for (const num of arr) {
+    console.log(num)   
+}
+
+const greetings="Hello world!"
+for (greet of greetings){
+    console.log(`Each char is ${greet}`)
+}
+
+
+const map = new Map()
+map.set("In","India")
+map.set("Fr","France")
+map.set("Ita","Italy")
+map.set("Esp","Spain")
+
+for(const [keys,value] of map){
+    console.log(keys,"=", value)
+}
+
+//ii.For-in loop
+
+myObject ={
+    js:"JavaScript",
+    py:"Python"
+}
+for (const keys in myObject){
+    console.log(`${keys} is short for ${myObject[keys]}`)
+}
+
+const myhero = ["Flash","Batman","Spiderman"]
+for(const element in myhero){
+    console.log(myhero[element])
+}
+
+
+//iii.For-each loop
+const coding = ["js","ruby","java","python","c++"]
+// coding.forEach(function(item){
+//     console.log(item)
+//})
+
+// function printItem(items){
+//     console.log(items)
+// }
+
+// coding.forEach(printItem)
+
+
+coding.forEach((items,index)=>{
+    console.log(items,index)
+})
+
+const myCoding =[{
+    languagename: "JavaScript",
+    languagefilename:"JS"
+},
+{
+    languagename:"Python",
+    languagefilename:"py"
+},
+{
+    languagename:"React",
+    languagefilename:"R"
+}] 
+
+myCoding.forEach((item)=>{
+    console.log(item.languagename)
+})

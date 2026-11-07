@@ -348,8 +348,18 @@ const emptyObj={
 
 }
 if(Object.keys(emptyObj).length===0){
-    {}    console.log("Object is empty")
+   console.log("Object is empty")
 }
 else{
     console.log("Obejct is not empty")
 }
+
+let val1;
+// val1=5??10
+// val1=null?10
+val1=undefined??15
+console.log(val1)
+
+//Terniary Operator -> condition ? true :false
+const iceTeaprice = 150
+iceTeaprice >= 100 ? console.log("More than 100") : console.log("Less than 100")

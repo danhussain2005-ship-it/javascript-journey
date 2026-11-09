@@ -501,6 +501,8 @@ myCoding.forEach((item)=>{
 // })
 // console.log(value2)
 
+//Filter and Reduce
+
 const nums=[1,2,3,4,5,6,7,8,9,10]
 const Mynum = nums.filter((item)=> item > 4)
 console.log(Mynum)
@@ -514,6 +516,38 @@ const books =  [
   { title: 'Book Six',   genre: 'Fiction',     publish: 1987, edition: 2010 },
   { title: 'Book Seven', genre: 'History',     publish: 1986, edition: 1996 }]
 
-// const userbook = books.filter((bk)=>bk.genre==="Fiction")
-const userbooks = books.filter((bk)=>bk.publish<2000)
-console.log(userbooks)
+let userbook = books.filter((bk)=>bk.genre==="Fiction");
+userbook = books.filter((bk)=>bk.publish<2000)
+console.log(userbook)
+
+const MYnumbers = [1,2,3,4,5,6,7,8,9,10]
+// let NEWnumber = MYnumbers.map((nums)=> nums+10)
+// console.log(NEWnumber)
+
+// MYnumbers.forEach((nums)=>{
+// console.log(nums+10)})
+let NEWnumber = MYnumbers.map((nums)=>nums*10).map((nums)=>nums+10).filter((nums)=>nums>=40)
+console.log(NEWnumber)
+ 
+const myNums= [1,2,3]
+// const myTotal = myNums.reduce(function(acc,current){
+//     console.log(`acc:${acc} and current:${current}`)
+//     return acc+current
+// },0)
+
+const myTotal=myNums.reduce((acc,current)=>acc+current,0)
+console.log(myTotal) 
+
+const ShoppingCart=[{
+    course:"JS course",
+    price:2000
+},
+{
+    course:"Py course",
+    price:3000
+},
+{    course:"Java course",
+    price:2500
+}]
+const pricetoPay=ShoppingCart.reduce((acc,item)=>acc+item.price,0)
+console.log(pricetoPay)
